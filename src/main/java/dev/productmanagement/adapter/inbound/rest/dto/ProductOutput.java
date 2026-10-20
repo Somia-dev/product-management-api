@@ -1,5 +1,7 @@
 package dev.productmanagement.adapter.inbound.rest.dto;
 
-public record ProductOutput() {
+import java.math.BigDecimal;
+
+public record ProductOutput(String sku, String name, String description, BigDecimal price) {
 
 }

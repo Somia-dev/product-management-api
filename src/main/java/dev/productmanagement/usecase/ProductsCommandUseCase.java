@@ -1,6 +1,7 @@
-package dev.productmanagement.usercase;
+package dev.productmanagement.usecase;
 
-import dev.productmanagement.adapter.domain.Product;
+import dev.productmanagement.domain.Product;
+import dev.productmanagement.usecase.dto.CreatedProduct;
 
 public interface ProductsCommandUseCase {
     CreatedProduct createProduct(Product product);
