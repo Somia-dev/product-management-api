@@ -29,14 +29,14 @@ The H2 console is available at `http://localhost:8080/h2-console`
 | PATCH  | `/api/products/{sku}/description`     | Update a product description     |
 | DELETE | `/api/products/{sku}`                 | Delete a product                 |
 
-The SKU must match `^[A-Za-z0-9-]{3,32}$`.
+The SKU must follow the pattern `AA99999` (two letters followed by five digits).
 
 Example:
 
 ```bash
-curl -X PUT http://localhost:8080/api/products/ABC-123 \
+curl -X PUT http://localhost:8080/api/products/AB12345 \
   -H "Content-Type: application/json" \
-  -d '{"name":"Pen","description":"Blue","price":2.5}'
+  -d '{"name":"Pen","description":"Blue ballpoint pen","price":2.5}'
 ```
 
 ## Project structure
